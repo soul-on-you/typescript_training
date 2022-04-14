@@ -1,0 +1,12 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "test_app",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -w src/* -outDir ./dist -t ESNext --removeComments -m ESNext -outFile main.js --sourceMap",
+    "test": "tsc -w src/* -outDir ./tmp -t ES5 --removeComments -m commonjs"
+  },
+  "author": "diomedialc",
+  "license": "ISC"
+}
