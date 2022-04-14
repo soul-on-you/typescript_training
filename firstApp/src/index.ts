@@ -5,6 +5,7 @@ import UnionTest from "./3_Union";
 import ObjectsTest from "./4_Objects";
 import PsevdonimsTest from "./5_Psevdonims";
 import ArrayTest from "./6_Arrays";
+import EnumTest from "./7_Enum";
 
 console.log("\n1_CLASSES_TEST:");
 const Belchonok: Cat = new Cat("Belchonok");
@@ -57,5 +58,8 @@ ObjectsTest();
 console.log("\n5_PSEVDONIMS:");
 PsevdonimsTest();
 
-console.log("\n5_ARRAYS:");
+console.log("\n6_ARRAYS:");
 ArrayTest();
+
+console.log("\n7_ENUM:");
+EnumTest();
