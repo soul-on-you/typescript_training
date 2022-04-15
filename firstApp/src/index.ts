@@ -11,6 +11,7 @@ import AbstractClassesTest from "./9_AbstractClassses";
 import InterfaceTest from "./10_Interfaces";
 import PreobrazovaniaClassesTest from "./11_PreobrazovaniaClassov";
 import ObobsheniaTest from "./12_Obobshenia";
+import MixinsTest from "./13_Mixins";
 
 console.log("\n1_CLASSES_TEST:");
 const Belchonok: Cat = new Cat("Belchonok");
@@ -83,3 +84,6 @@ PreobrazovaniaClassesTest();
 
 console.log("\n12_OBOBSHENIA:");
 ObobsheniaTest();
+
+console.log("\n13_MIXINS:");
+MixinsTest();
