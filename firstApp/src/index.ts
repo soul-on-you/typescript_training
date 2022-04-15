@@ -10,6 +10,7 @@ import ClassTest from "./8_Classes";
 import AbstractClassesTest from "./9_AbstractClassses";
 import InterfaceTest from "./10_Interfaces";
 import PreobrazovaniaClassesTest from "./11_PreobrazovaniaClassov";
+import ObobsheniaTest from "./12_Obobshenia";
 
 console.log("\n1_CLASSES_TEST:");
 const Belchonok: Cat = new Cat("Belchonok");
@@ -79,3 +80,6 @@ InterfaceTest();
 
 console.log("\n11_PREOBRAZOVANIA_CLASSOV:");
 PreobrazovaniaClassesTest();
+
+console.log("\n12_OBOBSHENIA:");
+ObobsheniaTest();
