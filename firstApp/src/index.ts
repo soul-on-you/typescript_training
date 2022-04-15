@@ -9,6 +9,7 @@ import EnumTest from "./7_Enum";
 import ClassTest from "./8_Classes";
 import AbstractClassesTest from "./9_AbstractClassses";
 import InterfaceTest from "./10_Interfaces";
+import PreobrazovaniaClassesTest from "./11_PreobrazovaniaClassov";
 
 console.log("\n1_CLASSES_TEST:");
 const Belchonok: Cat = new Cat("Belchonok");
@@ -75,3 +76,6 @@ AbstractClassesTest();
 
 console.log("\n10_INTERFACES:");
 InterfaceTest();
+
+console.log("\n11_PREOBRAZOVANIA_CLASSOV:");
+PreobrazovaniaClassesTest();
