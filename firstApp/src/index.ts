@@ -6,6 +6,9 @@ import ObjectsTest from "./4_Objects";
 import PsevdonimsTest from "./5_Psevdonims";
 import ArrayTest from "./6_Arrays";
 import EnumTest from "./7_Enum";
+import ClassTest from "./8_Classes";
+import AbstractClassesTest from "./9_AbstractClassses";
+import InterfaceTest from "./10_Interfaces";
 
 console.log("\n1_CLASSES_TEST:");
 const Belchonok: Cat = new Cat("Belchonok");
@@ -63,3 +66,12 @@ ArrayTest();
 
 console.log("\n7_ENUM:");
 EnumTest();
+
+console.log("\n8_CLASSES:");
+ClassTest();
+
+console.log("\n9_ABSTARCT_CLASSES:");
+AbstractClassesTest();
+
+console.log("\n10_INTERFACES:");
+InterfaceTest();
