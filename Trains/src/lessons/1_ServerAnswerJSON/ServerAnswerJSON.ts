@@ -108,3 +108,34 @@ console.log(okResponse2);
 
 console.log("\nERROR:");
 console.log(errorResponse2);
+
+// Задача 2 на typeguard
+
+type TResp = IResponseSuccess | IResponseFailed;
+type f = (res: TResp) => number;
+
+function isSuccessResponse(res: TResp): res is IResponseSuccess {
+  return res.status === PaymentStatus.Success;
+}
+
+function isFailedResponse(res: TResp): res is IResponseFailed {
+  return (res as IResponseFailed).data.errorMessage !== undefined;
+}
+
+const getIdFromData: f = function (mres) {
+  // ВАРИАНТ 1
+  if (isSuccessResponse(mres)) {
+    return mres.data.transferID;
+  }
+  return mres.data.errorCode;
+
+  // ВАРИАНТ 2
+  // if (isFailedResponse(mres)) {
+  //   return mres.data.errorCode;
+  // }
+  // return mres.data.transferID;
+};
+
+console.log("\nTYPE GUARD:");
+console.log(getIdFromData(okResponse2));
+console.log(getIdFromData(errorResponse2));
