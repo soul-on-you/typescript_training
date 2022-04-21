@@ -49,8 +49,8 @@ namespace solution {
   }
 
   const logger = new MyLogger();
-  logger.log("Авторизация...");
-  logger.log("Ожидание ответа от БД...");
-  logger.log("Загрузка SPA админки...");
-  logger.log("Готово к работе");
+  logger.logWithDate("Авторизация...");
+  logger.logWithDate("Ожидание ответа от БД...");
+  logger.logWithDate("Загрузка SPA админки...");
+  logger.logWithDate("Готово к работе");
 }

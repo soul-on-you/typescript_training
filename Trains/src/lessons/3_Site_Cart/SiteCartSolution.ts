@@ -65,13 +65,13 @@ namespace solution {
 
   const cart = new Cart();
 
-//   console.log(cart.checkout());
+  //   console.log(cart.checkout());
 
   cart.addProduct(new Product(44, "Яблоки ГоденДен", 230));
   cart.addProduct(new Product(20, "Шоколад Milka молочный", 89));
   cart.addProduct(new Product(22, "Шоколад Milka темный", 72));
 
-//   console.log(cart.checkout());
+  //   console.log(cart.checkout());
 
   cart.deleteProduct(20);
 
