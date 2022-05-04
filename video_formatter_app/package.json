@@ -1,0 +1,19 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "test_app",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -w src/* -outDir ./dist -t ESNext --removeComments -m ESNext --sourceMap",
+    "test": "tsc -w src/* -outDir ./tmp -t ES5 --removeComments -m commonjs --allowSyntheticDefaultImports",
+    "observer": "nodemon index.js"
+  },
+  "author": "diomedialc",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.1"
+  }
+}
